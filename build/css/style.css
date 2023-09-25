@@ -1729,7 +1729,6 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #316dc2;
   border: none;
   cursor: pointer;
   border-radius: 44px;
@@ -1766,7 +1765,6 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: transparent;
   border: none;
   cursor: pointer;
   border-radius: 30px;
@@ -2691,8 +2689,6 @@ button,
   border-radius: 30px;
   outline: 1px solid #316dc2;
   outline-offset: -1px;
-  -webkit-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
   font-family: "Manrope", "Arial", sans-serif;
   font-size: 14px;
   font-style: normal;
@@ -2883,6 +2879,7 @@ button,
 }
 
 .nav__sublist {
+  visibility: hidden;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   list-style: none;
@@ -2925,10 +2922,6 @@ button,
 .nav__sublink.disabled {
   cursor: none;
   opacity: 0.7;
-}
-
-.nav__sublist {
-  visibility: hidden;
 }
 
 .is-active .nav__sublist {
@@ -3343,7 +3336,7 @@ button,
   width: -moz-fit-content;
   width: fit-content;
   background: #ffffff;
-  border-radius: 12px 12px 0px 0px;
+  border-radius: 12px 12px 0 0;
 }
 
 .programs__content h3::after {
@@ -3375,7 +3368,7 @@ button,
   display: flex;
   gap: 16px;
   background: #ffffff;
-  border-radius: 0px 12px 12px 12px;
+  border-radius: 0 12px 12px 12px;
 }
 
 .programs__btn-secondary {
@@ -3730,7 +3723,7 @@ button,
     left: 0;
     background: #ffffff;
     padding: 10px 15px;
-    border-radius: 0px 0px 14px 14px;
+    border-radius: 0 0 14px 14px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
   }

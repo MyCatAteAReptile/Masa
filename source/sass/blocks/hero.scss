@@ -1,8 +1,6 @@
 .hero {
-
-  &__slider {
-  }
-
+  // &__slider {
+  // }
   &__list {
     margin: 0;
     padding: 0;
@@ -142,7 +140,7 @@
 
       background: $color-default-white;
       padding: 10px 15px;
-      border-radius: 0px 0px 14px 14px;
+      border-radius: 0 0 14px 14px;
       box-sizing: border-box;
 
       &::after {

@@ -16,8 +16,6 @@
     outline: 1px solid $color-cerulean-blue;
     outline-offset: -1px;
 
-    transition: opacity $trans-default;
-
     font-family: $ff-manrope;
     font-size: 14px;
     font-style: normal;
@@ -27,7 +25,7 @@
     text-transform: uppercase;
 
     width: 100%;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
 
     &::after {
       content: "";
@@ -141,7 +139,7 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
     overflow-y: auto;
     max-height: 50vh;
 
@@ -174,15 +172,15 @@
     }
   }
 
-  &__item {
-  }
+  // &__item {
+  // }
 
   &__link {
     color: inherit;
     outline: none;
 
     & svg {
-      transition: all .3s ease;
+      transition: all 0.3s ease;
       margin-left: 10px;
     }
 
@@ -208,14 +206,15 @@
     }
   }
 
-  &__link--button {
-  }
+  // &__link--button {
+  // }
 
-  &__icon-menu {
-  }
+  // &__icon-menu {
+  // }
 
   &__sublist {
-    transition: all .3s ease;
+    visibility: hidden;
+    transition: all 0.3s ease;
     list-style: none;
     margin: 0;
     padding: 0 0 0 16px;
@@ -255,10 +254,6 @@
   }
 }
 
-.nav__sublist {
-  visibility: hidden;
-}
-
 .is-active .nav__sublist {
   margin-top: 20px;
   visibility: visible;
@@ -272,7 +267,7 @@
   color: $color-default-white;
 
   & svg {
-    transition: all .3s ease;
+    transition: all 0.3s ease;
     transform: scale(-1);
   }
 }

@@ -29,8 +29,8 @@
     }
   }
 
-  &__logo-image {
-  }
+  // &__logo-image {
+  // }
 
   &__links {
     list-style: none;
@@ -109,8 +109,8 @@
     }
   }
 
-  &__socials-item {
-  }
+  // &__socials-item {
+  // }
 
   &__socials-link {
     display: block;
@@ -124,7 +124,7 @@
       width: 36px;
       height: 36px;
       background: var(--icon-fill);
-      transition: all .3s ease;
+      transition: all 0.3s ease;
 
       @include vp-767 {
         width: 26px;
