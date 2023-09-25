@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./favicon.ico">
+    <link rel="icon" href="./favicon/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./favicon/apple.png">
+    <link rel="manifest" href="./manifest.webmanifest">
+    <link rel="preload" href="./fonts/manrope-light.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/manrope-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/manrope-medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <meta name="description" content="Сайт проекта Маса">
+    <title>Маса</title>
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__container">
+            <a class="header__logo logo" href="index.html" aria-label="Логотип компании - Ссылка на главную страницу">
+              <svg class="header__logo-image" width="52" height="52" aria-hidden="true" focusable="false">
+                <use href="./img/svg/logo.svg#logo"></use>
+              </svg>
+            </a>
+            <nav class="header__nav nav">
+              <button class="header__nav-toggle nav__toggle nav__toggle--closed" type="button">Меню</button>
+              <ul class=" header__nav-list nav__list nav__list--closed" data-accordion="parent">
+                <li class="nav__item">
+                  <a class="nav__link" href="#!">О&nbsp;проекте</a>
+                </li>
+                <li class="nav__item" data-accordion="element">
+                  <a class="nav__link nav__link--button" href="#!" data-accordion="button">
+                    Программы<svg class="nav__icon-menu" width="12" height="12" aria-hidden="true" focusable="false"><use href="./img/sprite.svg#arrow-down"></use></svg>
+                  </a>
+                  <ul class="nav__sublist" data-accordion="content">
+                    <li class="nav__item">
+                      <a class="nav__sublink nav__sublink--current" href="#!">Стажировки</a>
+                    </li>
+                    <li class="nav__item">
+                      <a class="nav__sublink" href="#!">Волонтёрство</a>
+                    </li>
+                    <li class="nav__item">
+                      <a class="nav__sublink" href="#!">Учёба</a>
+                    </li>
+                    <li class="nav__item">
+                      <a class="nav__sublink" href="#!">Религия</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#!">Как поехать</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#!">Отзывы</a>
+                </li>
+                <li class="nav__item" data-accordion="element">
+                  <a class="nav__link nav__link--button" href="#!" data-accordion="button">
+                    Новости<svg class="nav__icon-menu" width="12" height="12" aria-hidden="true" focusable="false"><use href="./img/sprite.svg#arrow-down"></use></svg>
+                  </a>
+                  <ul class="nav__sublist" data-accordion="content">
+                    <li class="nav__item">
+                      <a class="nav__sublink" href="#!">Общее</a>
+                    </li>
+                    <li class="nav__item">
+                      <a class="nav__sublink" href="#!">Волонтёрство</a>
+                    </li>
+                    <li class="nav__item">
+                      <a class="nav__sublink" href="#!">Стажировки</a>
+                    </li>
+                    <li class="nav__item">
+                      <a class="nav__sublink" href="#!">Карьера</a>
+                    </li>
+                    <li class="nav__item">
+                      <a class="nav__sublink" href="#!">Путешествия</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#!">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="hero">
+          <h2 class="visually-hidden">Популярные программы.</h2>
+          <div class="hero__slider swiper">
+            <ul class="hero__list swiper-wrapper">
+              <li class="hero__item swiper-slide">
+                <div class="container">
+                  <div class="hero__content">
+                    <div class="hero__pagination"></div>
+                    <h3>Программы стажировок в&nbsp;крупнейших компаниях Израиля</h3>
+                    <div class="hero__wrapper">
+                      <p>Получите незаменимый опыт работы в&nbsp;ведущих израильских компаниях и&nbsp;государственных организациях.</p>
+                      <div class="hero__btn-wrapper">
+                        <a class="hero__btn btn" href="#!">Подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <picture class="hero__background">
+                  <source type="image/webp" media="(max-width: 767px)" srcset="./img/hero/internship-mobile@1x.webp, ./img/hero/internship-mobile@2x.webp 2x" width="320" height="568">
+                  <source type="image/webp" media="(max-width: 1199px)" srcset="./img/hero/internship-tablet@1x.webp, ./img/hero/internship-tablet@2x.webp 2x" width="768" height="1024">
+                  <source type="image/webp" srcset="./img/hero/internship-desktop@1x.webp, ./img/hero/internship-desktop@2x.webp 2x" width="1440" height="800">
+                  <source media="(max-width: 767px)" srcset="./img/hero/internship-mobile@1x.jpg, ./img/hero/internship-mobile@2x.jpg 2x" width="320" height="568">
+                  <source media="(max-width: 1199px)" srcset="./img/hero/internship-tablet@1x.jpg, ./img/hero/internship-tablet@2x.jpg 2x" width="768" height="1024">
+                  <img src="./img/hero/internship-desktop@1x.jpg" srcset="./img/hero/internship-desktop@2x.jpg 2x" width="1440" height="800" alt="Группа людей просматривает документ.">
+                </picture>
+              </li>
+              <li class="hero__item swiper-slide">
+                <div class="container">
+                  <div class="hero__content">
+                    <div class="hero__pagination"></div>
+                    <h3>Волонтёрские программы&nbsp;&mdash; внесите свой вклад в&nbsp;общество</h3>
+                    <div class="hero__wrapper">
+                      <p>Возможности для преподавания, органического сельского хозяйства, устойчивого образа жизни и&nbsp;другое.</p>
+                      <div class="hero__btn-wrapper">
+                        <a class="hero__btn btn" href="#!">Подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <picture class="hero__background">
+                  <source type="image/webp" media="(max-width: 767px)" srcset="./img/hero/volunteering-mobile@1x.webp, ./img/hero/volunteering-mobile@2x.webp 2x" width="320" height="568">
+                  <source type="image/webp" media="(max-width: 1199px)" srcset="./img/hero/volunteering-tablet@1x.webp, ./img/hero/volunteering-tablet@2x.webp 2x" width="768" height="1024">
+                  <source type="image/webp" srcset="./img/hero/volunteering-desktop@1x.webp, ./img/hero/volunteering-desktop@2x.webp 2x" width="1440" height="800">
+                  <source media="(max-width: 767px)" srcset="./img/hero/volunteering-mobile@1x.jpg, ./img/hero/volunteering-mobile@2x.jpg 2x" width="320" height="568">
+                  <source media="(max-width: 1199px)" srcset="./img/hero/volunteering-tablet@1x.jpg, ./img/hero/volunteering-tablet@2x.jpg 2x" width="768" height="1024">
+                  <img src="./img/hero/volunteering-desktop@1x.jpg" srcset="./img/hero/volunteering-desktop@2x.jpg 2x" width="1440" height="800" alt="Группа людей позирует для фотографии." loading="lazy">
+                </picture>
+              </li>
+              <li class="hero__item swiper-slide">
+                <div class="container">
+                  <div class="hero__content">
+                    <div class="hero__pagination"></div>
+                    <h3>Глобальный профессиональный опыт обучения за&nbsp;рубежом</h3>
+                    <div class="hero__wrapper">
+                      <p>Погрузитесь в&nbsp;академическую программу, проходя практику в&nbsp;Тель-Авиве и&nbsp;ощущая настоящий израильский стиль жизни!</p>
+                      <div class="hero__btn-wrapper">
+                        <a class="hero__btn btn" href="#!">Подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <picture class="hero__background">
+                  <source type="image/webp" media="(max-width: 767px)" srcset="./img/hero/experience-mobile@1x.webp, ./img/hero/experience-mobile@2x.webp 2x" width="320" height="568">
+                  <source type="image/webp" media="(max-width: 1199px)" srcset="./img/hero/experience-tablet@1x.webp, ./img/hero/experience-tablet@2x.webp 2x" width="768" height="1024">
+                  <source type="image/webp" srcset="./img/hero/experience-desktop@1x.webp, ./img/hero/experience-desktop@2x.webp 2x" width="1440" height="800">
+                  <source media="(max-width: 767px)" srcset="./img/hero/experience-mobile@1x.jpg, ./img/hero/experience-mobile@2x.jpg 2x" width="320" height="568">
+                  <source media="(max-width: 1199px)" srcset="./img/hero/experience-tablet@1x.jpg, ./img/hero/experience-tablet@2x.jpg 2x" width="768" height="1024">
+                  <img src="./img/hero/experience-desktop@1x.jpg" srcset="./img/hero/experience-desktop@2x.jpg 2x" width="1440" height="800" alt="Девушка держит книги и улыбается." loading="lazy">
+                </picture>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="about" id="about">
+          <div class="container">
+            <div class="about__container">
+              <div class="about__wrapper">
+                <h2 class="title title--light-bg title__main">О&nbsp;проекте &laquo;Маса&raquo;</h2>
+                <p>&laquo;Маса&raquo;&nbsp;&mdash; совместный проект правительства Израиля и&nbsp;Еврейского агентства Сохнут.</p>
+              </div>
+              <div class="about__wrapper">
+                <h3 class="title title--light-bg title__second">Наша цель</h3>
+                <p>Наша деятельность направлена на&nbsp;повышение квалификации молодых специалистов на&nbsp;ранних и&nbsp;средних стадиях карьеры, предоставляя им&nbsp;инструменты для решения сложных проблем, с&nbsp;которыми сталкиваются Израиль и&nbsp;еврейские общины во&nbsp;всем мире. Цель центра&nbsp;&mdash; наделить этих людей способностью инициировать значимые изменения.</p>
+                <button class="about__btn btn" type="button" data-open-modal="feedback">Подробнее о&nbsp;проекте</button>
+              </div>
+              <dl class="about__features">
+                <div class="about__features-wrapper">
+                  <dt>Более 250 программ</dt>
+                  <dd>учебных и&nbsp;рабочих, разной длительностью от&nbsp;3&nbsp;месяцев до&nbsp;1&nbsp;года</dd>
+                </div>
+                <div class="about__features-wrapper">
+                  <dt>Более 3000 участников</dt>
+                  <dd>уже успешно прошли программу от&nbsp;&laquo;Маса&raquo; и&nbsp;остались в&nbsp;Израиле</dd>
+                </div>
+                <div class="about__features-wrapper">
+                  <dt>От&nbsp;4&nbsp;200&nbsp;$ до&nbsp;8&nbsp;400&nbsp;$</dt>
+                  <dd>грант всем участникам для комфортного прохождения программы</dd>
+                </div>
+                <div class="about__features-wrapper">
+                  <dt>Участники из&nbsp;60&nbsp;стран</dt>
+                  <dd>студенты со&nbsp;всего мира&nbsp;приезжают на&nbsp;программу &laquo;Маса&raquo;</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </section>
+        <section class="programs" id="programs">
+          <div class="container">
+            <div class="programs__container">
+              <h2 class="programs__title title title__main title--light-bg">Программы</h2>
+              <a class="programs__btn btn" href="#!">Все программы</a>
+              <div class="programs__slider swiper">
+                <ul class="programs__list swiper-wrapper">
+                  <li class="programs__item swiper-slide">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="./img/programs/internships-mobile@1x.webp, ./img/programs/internships-mobile@2x.webp 2x" width="290" height="400">
+                      <source type="image/webp" media="(max-width: 1199px)" srcset="./img/programs/internships-tablet@1x.webp, ./img/programs/internships-tablet@2x.webp 2x" width="324" height="420">
+                      <source type="image/webp" srcset="./img/programs/internships-desktop@1x.webp, ./img/programs/internships-desktop@2x.webp 2x" width="392" height="420">
+                      <source media="(max-width: 767px)" srcset="./img/programs/internships-mobile@1x.jpg, ./img/programs/internships-mobile@2x.jpg 2x" width="290" height="400">
+                      <source media="(max-width: 1199px)" srcset="./img/programs/internships-tablet@1x.jpg, ./img/programs/internships-tablet@2x.jpg 2x" width="324" height="420">
+                      <img src="./img/programs/internships-desktop@1x.jpg" srcset="./img/programs/internships-desktop@2x.jpg 2x" width="392" height="420" alt="Пара женщин просматривают документ." loading="lazy">
+                    </picture>
+                    <div class="programs__content">
+                      <h3>Стажировки</h3>
+                      <div class="programs__wrapper">
+                        <p>Получите незаменимый опыт работы в&nbsp;крупнейших израильских компаниях.</p>
+                        <a class="programs__btn-secondary btn-secondary" href="#!" aria-label="Перейти на страницу со всеми программами."></a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="programs__item swiper-slide">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="./img/programs/volunteering-mobile@1x.webp, ./img/programs/volunteering-mobile@2x.webp 2x" width="290" height="400">
+                      <source type="image/webp" media="(max-width: 1199px)" srcset="./img/programs/volunteering-tablet@1x.webp, ./img/programs/volunteering-tablet@2x.webp 2x" width="324" height="420">
+                      <source type="image/webp" srcset="./img/programs/volunteering-desktop@1x.webp, ./img/programs/volunteering-desktop@2x.webp 2x" width="392" height="420">
+                      <source media="(max-width: 767px)" srcset="./img/programs/volunteering-mobile@1x.jpg, ./img/programs/volunteering-mobile@2x.jpg 2x" width="290" height="400">
+                      <source media="(max-width: 1199px)" srcset="./img/programs/volunteering-tablet@1x.jpg, ./img/programs/volunteering-tablet@2x.jpg 2x" width="324" height="420">
+                      <img src="./img/programs/volunteering-desktop@1x.jpg" srcset="./img/programs/volunteering-desktop@2x.jpg 2x" width="392" height="420" alt="Парень, держащий небольшое растение." loading="lazy">
+                    </picture>
+                    <div class="programs__content">
+                      <h3>Волонтёрство</h3>
+                      <div class="programs__wrapper">
+                        <p>Помогайте другим и&nbsp;развивайте свои лидерские качества.</p>
+                        <a class="programs__btn-secondary btn-secondary" href="#!" aria-label="Перейти на страницу со всеми программами."></a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="programs__item swiper-slide">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="./img/programs/study-mobile@1x.webp, ./img/programs/study-mobile@2x.webp 2x" width="290" height="400">
+                      <source type="image/webp" media="(max-width: 1199px)" srcset="./img/programs/study-tablet@1x.webp, ./img/programs/study-tablet@2x.webp 2x" width="324" height="420">
+                      <source type="image/webp" srcset="./img/programs/study-desktop@1x.webp, ./img/programs/study-desktop@2x.webp 2x" width="392" height="420">
+                      <source media="(max-width: 767px)" srcset="./img/programs/study-mobile@1x.jpg, ./img/programs/study-mobile@2x.jpg 2x" width="290" height="400">
+                      <source media="(max-width: 1199px)" srcset="./img/programs/study-tablet@1x.jpg, ./img/programs/study-tablet@2x.jpg 2x" width="324" height="420">
+                      <img src="./img/programs/study-desktop@1x.jpg" srcset="./img/programs/study-desktop@2x.jpg 2x" width="392" height="420" alt="Парень сидит за столом с книгами и книжным шкафом." loading="lazy">
+                    </picture>
+                    <div class="programs__content">
+                      <h3>Учёба</h3>
+                      <div class="programs__wrapper">
+                        <p>Получите образование и&nbsp;измените свое будущее.</p>
+                        <a class="programs__btn-secondary btn-secondary" href="#!" aria-label="Перейти на страницу со всеми программами."></a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="programs__item swiper-slide">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="./img/programs/internships-mobile@1x.webp, ./img/programs/internships-mobile@2x.webp 2x" width="290" height="400">
+                      <source type="image/webp" media="(max-width: 1199px)" srcset="./img/programs/internships-tablet@1x.webp, ./img/programs/internships-tablet@2x.webp 2x" width="324" height="420">
+                      <source type="image/webp" srcset="./img/programs/internships-desktop@1x.webp, ./img/programs/internships-desktop@2x.webp 2x" width="392" height="420">
+                      <source media="(max-width: 767px)" srcset="./img/programs/internships-mobile@1x.jpg, ./img/programs/internships-mobile@2x.jpg 2x" width="290" height="400">
+                      <source media="(max-width: 1199px)" srcset="./img/programs/internships-tablet@1x.jpg, ./img/programs/internships-tablet@2x.jpg 2x" width="324" height="420">
+                      <img src="./img/programs/internships-desktop@1x.jpg" srcset="./img/programs/internships-desktop@2x.jpg 2x" width="392" height="420" alt="Пара женщин просматривают документ." loading="lazy">
+                    </picture>
+                    <div class="programs__content">
+                      <h3>Стажировки</h3>
+                      <div class="programs__wrapper">
+                        <p>Получите незаменимый опыт работы в&nbsp;крупнейших израильских компаниях.</p>
+                        <a class="programs__btn-secondary btn-secondary" href="#!" aria-label="Перейти на страницу со всеми программами."></a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="programs__controls">
+                <div class="programs__scrollbar"></div>
+                <div class="programs__navigation">
+                  <button class="programs__prev btn-navigation btn-navigation--prev" type="button"></button>
+                  <button class="programs__next btn-navigation" type="button"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__container">
+            <a class="footer__logo logo" href="index.html" aria-label="Логотип компании - Ссылка на главную страницу">
+              <svg class="footer__logo-image" width="52" height="52" aria-hidden="true" focusable="false">
+                <use href="./img/svg/logo.svg#logo"></use>
+              </svg>
+            </a>
+            <ul class="footer__links">
+              <li class="footer__item">
+                <a class="footer__link" href="#about">О&nbsp;проекте</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#programs">Программы</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#details">Как поехать</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#reviews">Отзывы</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#news">Новости</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#contacts">Контакты</a>
+              </li>
+            </ul>
+            <ul class="footer__socials">
+              <li class="footer__socials-item">
+                <a class="footer__socials-link" href="#!" aria-label="ВКонтакте." data-socials="vk"></a>
+              </li>
+              <li class="footer__socials-item">
+                <a class="footer__socials-link" href="#!" aria-label="Одноклассники." data-socials="ok"></a>
+              </li>
+              <li class="footer__socials-item">
+                <a class="footer__socials-link" href="#!" aria-label="Reddit." data-socials="reddit"></a>
+              </li>
+            </ul>
+            <div class="footer__bottom-wrapper">
+              <p class="footer__copyright">Masa &copy;&nbsp;<time datetime="2023">2023</time> Все права защищены</p>
+              <a class="footer__policy" href="#!">Политика конфиденциальности</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Модалки -->
+    <div class="modal modal--preload" data-modal="feedback">
+      <div class="modal__wrapper">
+        <div class="modal__overlay" data-close-modal></div>
+        <div class="modal__content">
+          <p class="modal__description">Обычная модалка</p>
+          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+            <svg width="15" height="15">
+              <use xlink:href="img/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
+      <div class="modal__wrapper">
+        <div class="modal__overlay" data-close-modal></div>
+        <div class="modal__content">
+          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
+          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+            <svg width="15" height="15">
+              <use xlink:href="img/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
