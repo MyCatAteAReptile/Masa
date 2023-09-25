@@ -1,26 +1,89 @@
 .btn {
   display: inline-flex;
-  padding: 10px 20px;
+  padding: 4px 4px 4px 30px;
 
-  color: $color-default-white;
+  color: $color-cerulean-blue;
+  align-items: center;
+  justify-content: space-between;
 
-  background-color: $color-neon-blue;
+  background-color: transparent;
   border: none;
   cursor: pointer;
+  border-radius: 30px;
+  outline: 1px solid $color-cerulean-blue;
+  outline-offset: -1px;
 
   transition: opacity $trans-default;
 
-  &--red {
-    background-color: $color-torch-red;
+  font-family: $ff-manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0.28px;
+  text-transform: uppercase;
+
+  @include vp-767 {
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.24px;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 46px;
+    height: 46px;
+    background: url("../img/stack.svg#arrow-up") center center / contain no-repeat;
+    margin-left: 30px;
+    padding-left: 46px;
+    flex-grow: 1;
+
+    @include vp-767 {
+      width: 34px;
+      height: 34px;
+      padding-left: 34px;
+    }
+  }
+
+  &:hover:not([disabled]) {
+    background-color: $color-cerulean-blue;
+    color: $color-default-white;
+    outline: none;
+
+    &::after {
+      background: url("../img/stack.svg#arrow") center center / contain no-repeat;
+    }
+  }
+
+  &:focus-within:not([disabled]) {
+    background-color: $color-cerulean-blue;
+    color: $color-default-white;
+    outline: none;
+
+    &::after {
+      background: url("../img/stack.svg#arrow") center center / contain no-repeat;
+    }
+  }
+
+  &:active:not([disabled]) {
+    background-color: $color-cerulean-blue;
+    color: rgba(255, 255, 255, 0.7);
+    outline: none;
+
+    &::after {
+      background: url("../img/stack.svg#arrow-pale") center center / contain no-repeat;
+    }
   }
 
   &:disabled {
-    opacity: 0.5;
-
+    outline: 1px solid $color-mischka;
+    color: $color-mischka;
+    background-color: transparent;
     pointer-events: none;
-  }
 
-  @include hover-focus {
-    opacity: 0.8;
+    &::after {
+      background: url("../img/stack.svg#arrow-up-grey") center center / contain no-repeat;
+    }
   }
 }

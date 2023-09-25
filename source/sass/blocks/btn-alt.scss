@@ -1,0 +1,74 @@
+.btn-alt {
+  display: inline-flex;
+  padding: 4px 4px 4px 30px;
+
+  color: $color-default-white;
+  align-items: center;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+  outline: 1px solid $color-default-white;
+  outline-offset: -1px;
+
+  transition: opacity $trans-default;
+
+  font-family: $ff-manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0.28px;
+  text-transform: uppercase;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 46px;
+    height: 46px;
+    background: url("../img/stack.svg#arrow-up-alt") center center / contain no-repeat;
+    margin-left: 30px;
+  }
+
+  &:hover:not([disabled]) {
+    background-color: $color-default-white;
+    color: $color-cerulean-blue;
+    outline: none;
+
+    &::after {
+      background: url("../img/stack.svg#arrow-alt") center center / contain no-repeat;
+    }
+  }
+
+  &:focus-within:not([disabled]) {
+    background-color: $color-default-white;
+    color: $color-cerulean-blue;
+    outline: none;
+
+    &::after {
+      background: url("../img/stack.svg#arrow-alt") center center / contain no-repeat;
+    }
+  }
+
+  &:active:not([disabled]) {
+    background-color: $color-default-white;
+    color: rgba(49, 109, 194, 0.7);
+    outline: none;
+
+    &::after {
+      background: url("../img/stack.svg#arrow-pale-alt") center center / contain no-repeat;
+    }
+  }
+
+  &:disabled {
+    outline: 1px solid $color-mischka;
+    color: $color-mischka;
+    background-color: transparent;
+    pointer-events: none;
+
+    &::after {
+      background: url("../img/stack.svg#arrow-up-grey-alt") center center / contain no-repeat;
+    }
+  }
+}

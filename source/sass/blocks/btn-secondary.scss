@@ -1,0 +1,37 @@
+.btn-secondary {
+  display: inline-flex;
+  padding: 0;
+  padding-left: 30px;
+
+  color: $color-default-white;
+  align-items: center;
+
+  background-color: $color-cerulean-blue;
+  border: none;
+  cursor: pointer;
+  border-radius: 44px;
+  outline: none;
+
+  transition: opacity $trans-default;
+
+  background: url("../img/stack.svg#arrow-up-secondary") center center / contain no-repeat;
+
+  width: 30px;
+  height: 30px;
+
+  &:hover:not([disabled]) {
+    background: url("../img/stack.svg#arrow-secondary") center center / contain no-repeat;
+  }
+
+  &:focus-within:not([disabled]) {
+    background: url("../img/stack.svg#arrow-secondary") center center / contain no-repeat;
+  }
+
+  &:active:not([disabled]) {
+    background: url("../img/stack.svg#arrow-pale-secondary") center center / contain no-repeat;
+  }
+
+  &:disabled {
+    background: url("../img/stack.svg#arrow-up-grey-secondary") center center / contain no-repeat;
+  }
+}

@@ -1,0 +1,36 @@
+.header {
+  position: absolute;
+  width: 100vw;
+  z-index: 2;
+
+  &.nav-open::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(13, 29, 51, 0.2);
+    inset: 0;
+    height: 100vh;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 31px 0;
+  }
+
+  &__logo {
+  }
+
+  &__logo-image {
+  }
+
+  &__nav {
+    z-index: 2;
+  }
+
+  &__nav-toggle {
+  }
+
+  &__nav-list {
+  }
+}

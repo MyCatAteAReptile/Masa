@@ -1,0 +1,28 @@
+.logo {
+  display: inline-flex;
+  color: $color-cerulean-blue;
+  background-color: $color-default-white;
+  border-radius: 30px;
+  outline: none;
+
+  &:hover:not(.disabled) {
+    color: $color-default-white;
+    background-color: $color-cerulean-blue;
+  }
+
+  &:focus:not(.disabled) {
+    color: $color-default-white;
+    background-color: $color-cerulean-blue;
+  }
+
+  &:active:not(.disabled) {
+    color: rgba(255, 255, 255, 0.7);
+    background-color: $color-cerulean-blue;
+  }
+
+  &.disabled {
+    color: $color-mischka;
+    background-color: transparent;
+    pointer-events: none;
+  }
+}

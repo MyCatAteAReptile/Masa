@@ -1,0 +1,58 @@
+.btn-faq {
+  display: inline-flex;
+  padding: 0;
+
+  color: $color-default-white;
+  align-items: center;
+
+  background-color: $color-cerulean-blue;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+  outline: none;
+
+  transition: opacity $trans-default;
+
+  width: 30px;
+  height: 30px;
+
+  &--closed {
+    background: url("../img/stack.svg#plus-white-blue-round") center center / contain no-repeat;
+
+    &:hover:not([disabled]) {
+      background: url("../img/stack.svg#plus-blue-blue-border") center center / contain no-repeat;
+    }
+
+    &:focus-within:not([disabled]) {
+      background: url("../img/stack.svg#plus-blue-blue-border") center center / contain no-repeat;
+    }
+
+    &:active:not([disabled]) {
+      background: url("../img/stack.svg#plus-white-dark-blue-round") center center / contain no-repeat;
+    }
+
+    &:disabled {
+      background: url("../img/stack.svg#plus-white-grey-grey-round") center center / contain no-repeat;
+    }
+  }
+
+  &--open {
+    background: url("../img/stack.svg#minus-blue-white-round") center center / contain no-repeat;
+
+    &:hover:not([disabled]) {
+      background: url("../img/stack.svg#minus-white-white-border") center center / contain no-repeat;
+    }
+
+    &:focus-within:not([disabled]) {
+      background: url("../img/stack.svg#minus-white-white-border") center center / contain no-repeat;
+    }
+
+    &:active:not([disabled]) {
+      background: url("../img/stack.svg#minus-blue-white-round") center center / contain no-repeat;
+    }
+
+    &:disabled {
+      background: url("../img/stack.svg#plus-white-grey-grey-round") center center / contain no-repeat;
+    }
+  }
+}

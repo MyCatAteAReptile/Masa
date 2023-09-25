@@ -1,0 +1,40 @@
+.btn-navigation {
+  display: inline-flex;
+  padding: 0;
+
+  color: $color-default-white;
+  align-items: center;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+  outline: none;
+
+  transition: opacity $trans-default;
+
+  background: url("../img/stack.svg#arrow-right-navigation") center center / contain no-repeat;
+
+  width: 22px;
+  height: 22px;
+
+  &:hover:not([disabled]) {
+    background: url("../img/stack.svg#arrow-right-white-bg-navigation") center center / contain no-repeat;
+  }
+
+  &:focus-within:not([disabled]) {
+    background: url("../img/stack.svg#arrow-right-white-bg-navigation") center center / contain no-repeat;
+  }
+
+  &:active:not([disabled]) {
+    background: url("../img/stack.svg#arrow-right-pale-navigation") center center / contain no-repeat;
+  }
+
+  &:disabled {
+    background: url("../img/stack.svg#arrow-right-grey-navigation") center center / contain no-repeat;
+  }
+
+  &--prev {
+    transform: rotate(180deg);
+  }
+}
